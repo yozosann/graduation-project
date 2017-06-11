@@ -1,0 +1,24 @@
+grey_main=#2c3e50
+active_main=#7e8c8d
+
+.sellerinfo
+  margin: 10px 80px 0 80px
+  text-align: left
+  .tab
+    font-size: 0
+    .tab-item
+      display: inline-block
+      padding: 10px 20px
+      border: 1px solid grey
+      border-bottom-color: white 
+      font-size: 16px     
+      border-top-left-radius: 10px
+      border-top-right-radius: 10px
+      a
+        color: grey_main
+      &:last-child
+        position: relative
+        left: -1px
+      .router-link-exact-active
+        font-weight: bold
+        color: active_main

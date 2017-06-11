@@ -1,0 +1,41 @@
+#app
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  text-align: center
+  color: #2c3e50
+  min-width: 1300px
+
+grey_blue=rgb(0 ,122, 204)
+
+.item
+  margin-bottom: 28px
+  label[for="bulletin"],label[for="infos"],.fortextarea
+    vertical-align: top
+  input, textarea, select
+    border: 1px solid grey
+    padding: 5px 10px
+    border-radius: 2px;
+    margin-right: 10px
+    &:focus
+      outline: none
+      border-color: grey_blue
+  textarea
+    font-size: 16px
+    resize: none
+
+.button
+  position: relative
+  height: 26px
+  line-height: 18px
+  padding: 4px
+  border-radius: 2px
+  background-color: white
+  color: grey_main
+  border: 1px solid grey
+  margin-right: 20px
+  cursor: pointer
+  &:focus
+    outline: none
+  &:hover
+    transform: translateY(-4px)

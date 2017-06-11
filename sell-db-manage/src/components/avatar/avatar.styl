@@ -1,0 +1,33 @@
+.avatar
+  display: inline-block
+  position: relative
+  text-align: center
+  vertical-align: top
+  img
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+  .mask
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    cursor: pointer
+    background-color: transparent
+    transition: all 0.4s ease
+    p
+      position: absolute
+      left: 50%
+      top: 50%
+      color: transparent
+      font-size: 16px
+      font-weight: bold
+      transform: translate(-50%, -50%)
+      transition: all 0.4s ease
+    &:hover
+      background-color: rgba(0,0,0,0.4)
+      p
+        color: white

@@ -1,0 +1,143 @@
+grey_blue=rgb(0 ,122, 204)
+onepading=16px
+grey_main=#2c3e50
+icon()
+  &:after
+    position: absolute
+    top:80px
+    left: 40px
+    content: ''
+    height: 20px
+    width: 100px
+    background-color: white
+  &:before
+    position: absolute
+    top:40px
+    left: 80px
+    content: ''
+    height: 100px
+    width: 20px
+    background-color: white
+  
+.basicinfo
+  position: relative
+  top: -1px
+  border-top: 1px solid grey
+  padding: 20px 60px 0px 70px
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    top: -1px
+    height: 1px
+    width: 137px
+    background-color: white
+  .base
+    overflow: hidden
+    font-size: 0px
+    .message
+      float: right
+      margin-left: 50px
+      vertical-align: top
+      font-size: 16px
+  .other
+    display: flex
+    .other-message
+      margin-right: 30px
+      .fee
+        font-size: 16px
+        margin-top: 20px
+        .item
+          display: inline-block
+          margin-bottom: 0
+          &:last-child
+              margin-left: 50px
+          input
+            width: 50px
+      .infos
+        margin-top: 20px
+        display: flex
+        .item
+          margin-right: 50px
+      .supports
+        .item
+          input[type="text"]
+            width: 500px
+            margin-top: 10px
+    .tip
+      line-height: 24px
+      ol
+        margin-top: 100px
+        li
+          list-style: decimal
+          line-height: 26px
+  .album-wrapper
+    margin-top: 80px
+    .album
+      width: 784px
+      margin-top: 20px
+      padding: onepading onepading 0 0
+      border: 3px solid grey
+      font-size: 0
+      .img-item, .img-add
+        position: relative
+        display: inline-block
+        height: 180px
+        width: 180px
+        vertical-align: top
+        margin:0 0 onepading onepading
+        cursor: pointer
+        img
+          height: 100%
+          width: 100% 
+        .mask
+          position: absolute
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          background-color: transparent
+          transition: all 0.4s ease
+          .delete
+            position: absolute
+            right: 0px
+            top: 0px
+            font-size: 16px
+            padding: 10px
+            font-weight: bolder
+            color: transparent
+            transition: all 0.4s ease      
+          &:hover
+            background-color: rgba(0,0,0,0.4)
+            .delete
+              color: white
+      .img-add
+        background-color: grey
+        transition: all 0.4s ease
+        icon()
+        &:hover
+          transform: rotateZ(90deg)
+  .button-wrapper
+    margin-top: 20px
+    margin-bottom: 30px
+    text-align: center
+    .submit
+      position: relative
+      height: 26px
+      width: 200px
+      line-height: 18px
+      padding: 4px
+      border-radius: 2px
+      background-color: white
+      color: grey_main
+      border: 1px solid grey
+      margin-right: 20px
+      cursor: pointer
+      &:focus
+        outline: none
+      &:hover
+        transform: translateY(-4px)
+  
+    
+        
+
