@@ -11,7 +11,7 @@
 # 创建数据库
 cd server
 cd db
-# 打开bulid-db.js解开注释内容
+# 打开bulid-db.js解开注释部分
 node bulid-db.js
 
 # 运行后台
